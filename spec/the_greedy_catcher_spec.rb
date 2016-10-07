@@ -11,5 +11,9 @@ describe 'Rating' do
         p 'I am here - YOLO'
       end
     end
+
+    it 'right h*le' do
+      expect { rating.average }.to raise_error ZeroDivisionError
+    end
   end
 end
